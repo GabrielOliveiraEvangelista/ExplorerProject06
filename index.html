@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <title>Avaliação</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+    <div id="box-title">
+      <h1>avalie a sua mentoria</h1>
+      <p>Chegou a hora de avaliar o seu mentor. Bora lá?<br><br></p>
+      <img
+        src="img/img1 (2).svg"
+        alt="Balão de fala contendo 5 estrelas dentro"
+      />
+      <div id="box-header">
+        <h2 class="fonts-title">Informações pessoais</h2>
+      </div>
+    </header>
+    </div>
+    <section>
+      <div id="page">
+        <form id="my-form">
+          <div class="input-style">
+            <div class="box-name">
+              <label for="name">Nome</label>
+              <input required type="text" id="name">
+            </div>
+            <div class="box-surname">
+              <label for="surname">Sobrenome</label>
+              <input type="text" id="surname">
+            </div>
+          </div>
+          <div class="style-form">
+            <label for="email">Email <span>(digite um email válido)</span></label>
+            <input required type="email" id="email">
+          </div>
+          <fieldset>
+              <legend>Informações do mentor</legend>
+              <div class="box-ajust">
+                <label class="style-form" for="mentor">Selecione quem foi o seu mentor</label>
+                <select class="style-form" id="mentor">
+                  <option value="jose">José</option>
+                  <option value="mariano">Mariano</option>
+                  <option value="gabriel">Gabriel</option>
+                </select>
+              </div>
+              <div class="box-ajust">
+                <label class="style-form" for="feedback">Feedback sobre o mentor</label>
+                <textarea class="style-form" id="feedback" cols="30" rows="10"></textarea>
+              </div>
+              <div class="box-ajust-2">
+                <input class="style-form" type="checkbox" id="doubts">
+                <label class="style-form" for="doubts">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+              </div>
+          </fieldset>
+          <fieldset>
+            <legend>Agendando próxima mentoria</legend>
+            <div class="input-style">
+              <div class="box-date">
+                <label for="date">data</label>
+                <input required type="date" id="date">
+              </div>
+              <div class="box-time-all">
+                <div class="box-time">
+                  <label for="time-1">Das</label>
+                  <input type="time" id="time-1">
+                </div>
+                <div class="box-time-2">
+                  <label for="time-2">Até</label>
+                  <input type="time" id="time-2">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+        <div id="box-submit">
+          <input form="my-form" type="submit" value="enviar">
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
